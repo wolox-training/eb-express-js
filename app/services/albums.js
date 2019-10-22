@@ -5,13 +5,13 @@ const errors = require('../errors');
 const logger = require('../logger');
 
 exports.getAlbums = () =>
-  axios.get(`${albumResource.endpoint}/albums`).catch(err => {
-    logger.error('Error al intentar consumir la API');
+  axios.get(`${albumResource.albumEndpoint}/albums`).catch(err => {
+    logger.error('Error trying to consume the API');
     throw errors.apiError(err.message);
   });
 
 exports.getPhotos = () =>
-  axios.get(`${albumResource.endpoint}/photos`).catch(err => {
-    logger.error('Error al intentar consumir la API');
+  axios.get(`${albumResource.albumEndpoint}/photos`).catch(err => {
+    logger.error('Error trying to consume the API');
     throw errors.apiError(err.message);
   });

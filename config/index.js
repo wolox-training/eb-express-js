@@ -45,7 +45,7 @@ const config = {
       nodeVersion: process.env.NODE_VERSION || 'X-Node-Version'
     },
     albumResource: {
-      endpoint: process.env.API_ALBUM_ENDPOINT
+      albumEndpoint: process.env.API_ALBUM_ENDPOINT
     }
   }
 };
