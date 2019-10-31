@@ -21,6 +21,7 @@
     "start-dev": "nodemon --inspect server.js",
     "prestart-dev": "npm run lint",
     "migrations": "sequelize db:migrate",
+    "migrations-undo": "sequelize db:migrate:undo",
     "start": "node server.js"
   },
   "cacheDirectories": [
@@ -66,6 +67,7 @@
   },
   "dependencies": {
     "axios": "^0.19.0",
+    "bcrypt": "^3.0.6",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
     "express": "^4.17.1",
